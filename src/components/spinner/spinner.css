@@ -1,0 +1,84 @@
+
+
+@keyframes lds-wedges {
+    0% {
+       -webkit-transform: rotate(0deg);
+       transform: rotate(0deg);
+    }
+    100% {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes lds-wedges {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.lds-wedges {
+    position: relative;
+}
+.lds-wedges > div > div {
+    -webkit-transform-origin: 100px 100px;
+    transform-origin: 100px 100px;
+    -webkit-animation: lds-wedges 4.6s linear infinite;
+    animation: lds-wedges 4.6s linear infinite;
+    opacity: 0.8;
+}
+.lds-wedges > div > div > div {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px 0 0 0;
+    -webkit-transform-origin: 100px 100px;
+    transform-origin: 100px 100px;
+}
+.lds-wedges > div div:nth-child(1) > div {
+    background: #01213f;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.lds-wedges > div div:nth-child(1) {
+    -webkit-animation-duration: 1.15s;
+    animation-duration: 1.15s;
+}
+.lds-wedges > div div:nth-child(2) > div {
+    background: #58e807;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.lds-wedges > div div:nth-child(2) {
+    -webkit-animation-duration: 1.533333333333333s;
+    animation-duration: 1.533333333333333s;
+}
+.lds-wedges > div div:nth-child(3) > div {
+    background: #f7f403;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.lds-wedges > div div:nth-child(3) {
+    -webkit-animation-duration: 2.3s;
+    animation-duration: 2.3s;
+}
+.lds-wedges > div div:nth-child(4) > div {
+    background: #f30c05;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.lds-wedges > div div:nth-child(4) {
+    -webkit-animation-duration: 4.6s;
+    animation-duration: 4.6s;
+}
+.lds-wedges {
+    width: 90px !important;
+    height: 90px !important;
+    -webkit-transform: translate(-45px, -45px) scale(0.45) translate(45px, 45px);
+    transform: translate(-45px, -45px) scale(0.45) translate(45px, 45px);
+}
